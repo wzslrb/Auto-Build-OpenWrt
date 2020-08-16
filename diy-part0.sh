@@ -18,4 +18,8 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 #git clone https://github.com/vernesong/luci-app-clash package/molun/luci-app-clash
 #git clone https://github.com/fw876/helloworld package/molun/luci-app-ssr-plus
-git clone https://github.com/destan19/OpenAppFilter.git package/
+
+echo 下载应用过滤源码放到OpenWrt的package 目录
+cd package
+git clone https://github.com/destan19/OpenAppFilter.git
+cd -
