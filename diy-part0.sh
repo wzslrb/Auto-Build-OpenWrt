@@ -23,3 +23,8 @@ echo 下载应用过滤源码放到OpenWrt的package 目录
 cd package
 git clone https://github.com/destan19/OpenAppFilter.git
 cd -
+
+#在lede中编译，需要去除加速模块，可以直接删除或者make menuconfig不编译加速模块
+#rm package/lean/luci-app-flowoffload -fr
+#rm package/lean/shortcut-fe/ -fr
+#rm package/lean/luci-app-sfe/ -fr
